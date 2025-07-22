@@ -1,4 +1,4 @@
-# 🔐 Adversarial Attacks on ResNet-50 (CIFAR-10)
+# Adversarial Attacks on ResNet-50 (CIFAR-10)
 
 Este proyecto tiene como objetivo analizar la **vulnerabilidad del modelo ResNet-50** entrenado sobre el conjunto de datos **CIFAR-10**, frente a ataques adversarios. También se implementan y evalúan distintas **técnicas de defensa**, buscando mejorar la robustez del modelo ante amenazas en contextos de ciberseguridad.
 

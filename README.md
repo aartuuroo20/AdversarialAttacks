@@ -1,34 +1,32 @@
 # Adversarial Attacks on ResNet-50 (CIFAR-10)
 
-Este proyecto tiene como objetivo analizar la **vulnerabilidad del modelo ResNet-50** entrenado sobre el conjunto de datos **CIFAR-10**, frente a ataques adversarios. También se implementan y evalúan distintas **técnicas de defensa**, buscando mejorar la robustez del modelo ante amenazas en contextos de ciberseguridad.
+This project is part of my Master's Thesis and aims to analyze the **vulnerability of the ResNet-50 model** trained on the **CIFAR-10 dataset** against adversarial attacks. It also implements and evaluates various **defense techniques**, seeking to improve the model's robustness against threats in cybersecurity contexts.
 
 ---
 
-## Contenido del Repositorio
+## Repository Contents
 
-### CIFAR10_resnet50.pth
-Modelo preentrenado **ResNet-50** sobre CIFAR-10, utilizado como base para los experimentos adversariales y pruebas defensivas.
+### `CIFAR10_resnet50.pth`
+Pre-trained **ResNet-50** model on CIFAR-10, used as a base for adversarial experiments and defensive testing.
 
-### Preparacion del dataset.ipynb
-Notebook que:
-- Carga y transforma el conjunto **CIFAR-10**
-- Ajusta el formato para ser compatible con la arquitectura **ResNet-50**
+### `Dataset Preparation.ipynb`
+Notebook that:
+- Loads and transforms the **CIFAR-10** dataset
+- Adjusts the format to be compatible with the **ResNet-50** architecture
 
-### Ataque FGSM.ipynb
-Implementación del ataque **Fast Gradient Sign Method**:
-- Generación de ejemplos adversarios en un solo paso.
-- Visualización de imágenes originales vs. perturbadas.
-- Evaluación de la degradación del modelo.
+### `FGSM Attack.ipynb`
+Implementation of the **Fast Gradient Sign Method** attack:
+- Generation of adversarial examples in a single step.
+- Visualization of original vs. perturbed images.
+- Evaluation of model degradation.
 
-### Ataque PGD.ipynb
-Ejemplo del ataque **Projected Gradient Descent**:
-- Versión iterativa más potente que FGSM.
-- Explora distintas tasas de perturbación y número de iteraciones.
+### `PGD Attack.ipynb`
+Example of the **Projected Gradient Descent** attack:
+- A more powerful iterative version of FGSM.
+- Explores different perturbation rates and iteration numbers.
 
-### Ataque OnePixel.ipynb
-Implementación del **One Pixel Attack**:
-- Ataque basado en **evolución diferencial**.
-- Perturba solo **un único píxel** de la imagen.
-- Requiere configuración cuidadosa de hiperparámetros.
-
-
+### `OnePixel Attack.ipynb`
+Implementation of the **One Pixel Attack**:
+- Attack based on **differential evolution**.
+- Perturbs only **a single pixel** of the image.
+- Requires careful configuration of hyperparameters.
